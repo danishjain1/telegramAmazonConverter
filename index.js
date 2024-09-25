@@ -82,13 +82,13 @@ async function handleRequest(request) {
             }
           }
           const chatId = message.chat.id;
-          const url = `https://api.telegram.org/bot5919765361:AAHlDBIPqAjVtyKlvZlUkeWJD1ewlrnZrxk/sendMessage?chat_id=${chatId}&text=${text}`;
+          const url = `telegram_bot_api`;
           const data = await fetch(url).then((resp) => resp.json());
         }
       } else {
         const chatId = message.chat.id;
         const text2 = "you are not Auturized to use this bot";
-        const url = `https://api.telegram.org/bot5919765361:AAHlDBIPqAjVtyKlvZlUkeWJD1ewlrnZrxk/sendMessage?chat_id=${chatId}&text=${text2}`;
+        const url = `telegram_bot_api`;
         const data = await fetch(url).then((resp) => resp.json());
       }
     } catch (err) {
